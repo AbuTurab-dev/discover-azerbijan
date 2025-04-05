@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Information for Traveling to Azerbaijan | Discover Azerbaijan</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav id="navbar" class="sticky-nav nav-transparent text-white" role="banner" aria-label="Main navigation">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="https://azerbaijan.travel/images/logo-short.svg" alt="Azerbaijan Tourism Logo" class="h-10 mr-3" loading="lazy">
+                <span class="text-xl font-bold">Discover Azerbaijan</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#destinations" class="hover:text-yellow-300 transition duration-300">Destinations</a>
+                <a href="#seasons" class="hover:text-yellow-300 transition duration-300">Seasons</a>
+                <a href="#culture" class="hover:text-yellow-300 transition duration-300">Culture & Cuisine</a>
+                <a href="#transportation" class="hover:text-yellow-300 transition duration-300">Transportation</a>
+                <a href="#tips" class="hover:text-yellow-300 transition duration-300">Travel Tips</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu absolute top-0 left-0 h-screen w-64 bg-blue-900 text-white py-4 px-6 md:hidden">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-xl font-bold">Menu</span>
+                <button id="close-menu" class="focus:outline-none">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-6">
+                <a href="#destinations" class="hover:text-yellow-300 transition duration-300">Destinations</a>
+                <a href="#seasons" class="hover:text-yellow-300 transition duration-300">Seasons</a>
+                <a href="#culture" class="hover:text-yellow-300 transition duration-300">Culture & Cuisine</a>
+                <a href="#transportation" class="hover:text-yellow-300 transition duration-300">Transportation</a>
+                <a href="#tips" class="hover:text-yellow-300 transition duration-300">Travel Tips</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-white text-center" role="main" aria-label="Practical travel information for Azerbaijan">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Practical Travel Information</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Essential tips and facts to help you plan your trip to Azerbaijan</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Currency Section -->
+                <div class="mb-16">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-money-bill-wave text-2xl text-blue-900"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-blue-900">Currency & Banking</h2>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-blue-800">Azerbaijani Manat (AZN)</h3>
+                        <p class="text-gray-700 mb-4">
+                            The official currency of Azerbaijan is the Azerbaijani Manat (AZN). As of 2023, the exchange rate is approximately 1.7 AZN to 1 USD. Currency exchange offices are widely available in cities and at the airport.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-lg mb-2 text-blue-800">Banking Tips</h4>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>ATMs are widely available in cities and accept international cards</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Credit cards (Visa, Mastercard) accepted in most hotels, restaurants and shops</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Carry cash when traveling to rural areas</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2 text-blue-800">Approximate Costs</h4>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-utensils text-blue-500 mt-1 mr-2"></i>
+                                        <span>Meal at mid-range restaurant: 15-25 AZN</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-taxi text-blue-500 mt-1 mr-2"></i>
+                                        <span>Taxi ride in Baku: 5-10 AZN</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-hotel text-blue-500 mt-1 mr-2"></i>
+                                        <span>3-star hotel: 80-120 AZN/night</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transportation Section -->
+                <div class="mb-16">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-bus text-2xl text-blue-900"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-blue-900">Transportation</h2>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h3 class="text-xl font-bold mb-4 text-blue-800">Public Transport</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-subway text-blue-500 mt-1 mr-2"></i>
+                                        <span>Baku Metro: 0.30 AZN per ride with BakiKart</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-bus text-blue-500 mt-1 mr-2"></i>
+                                        <span>City buses: 0.30 AZN with BakiKart</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-4 text-blue-800">Taxis & Rental Cars</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-taxi text-blue-500 mt-1 mr-2"></i>
+                                        <span>Popular apps: Bolt, Uber, Yandex.Taxi</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-car text-blue-500 mt-1 mr-2"></i>
+                                        <span>Car rentals available at airport and city centers</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel Tips Section -->
+                <div class="mb-16">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-lightbulb text-2xl text-blue-900"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-blue-900">Travel Tips</h2>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h3 class="text-xl font-bold mb-4 text-blue-800">Safety & Etiquette</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-shield-alt text-blue-500 mt-1 mr-2"></i>
+                                        <span>Azerbaijan is generally safe for tourists</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-hands-helping text-blue-500 mt-1 mr-2"></i>
+                                        <span>Remove shoes when entering homes</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-4 text-blue-800">Packing Essentials</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-umbrella-beach text-blue-500 mt-1 mr-2"></i>
+                                        <span>Modest clothing for religious sites</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-sun text-blue-500 mt-1 mr-2"></i>
+                                        <span>Sunscreen for summer months</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emergency Contacts Section -->
+                <div class="mb-16">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-phone-alt text-2xl text-blue-900"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-blue-900">Emergency Contacts</h2>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h3 class="text-xl font-bold mb-4 text-blue-800">Important Numbers</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-ambulance text-blue-500 mt-1 mr-2"></i>
+                                        <span>Ambulance: 103</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-fire-extinguisher text-blue-500 mt-1 mr-2"></i>
+                                        <span>Fire: 101</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-shield-alt text-blue-500 mt-1 mr-2"></i>
+                                        <span>Police: 102</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-4 text-blue-800">Tourist Assistance</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-passport text-blue-500 mt-1 mr-2"></i>
+                                        <span>Tourist Police: *9001</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-flag text-blue-500 mt-1 mr-2"></i>
+                                        <span>Ministry of Tourism: +994 12 498 10 90</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Language Section -->
+                <div class="mb-16">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-language text-2xl text-blue-900"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-blue-900">Language & Communication</h2>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-blue-800">Official Language</h3>
+                        <p class="text-gray-700 mb-4">
+                            The official language is Azerbaijani (Azeri), a Turkic language. Russian is widely spoken as a second language, especially among older generations. English proficiency is increasing, particularly among younger people and in the tourism sector.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-lg mb-2 text-blue-800">Useful Phrases</h4>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="font-semibold mr-2">Salam</span>
+                                        <span>- Hello</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="font-semibold mr-2">Sağ olun</span>
+                                        <span>- Thank you</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="font-semibold mr-2">Necəsəniz?</span>
+                                        <span>- How are you?</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="font-semibold mr-2">Başa düşmürəm</span>
+                                        <span>- I don't understand</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2 text-blue-800">Communication Tips</h4>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Many signs in Baku are in both Azerbaijani and English</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Download a translation app for offline use</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Learn basic Russian phrases for rural areas</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="border-t border-gray-800 pt-4">
+                <p class="text-center text-gray-500">
+                    &copy; 2025 Discover Azerbaijan. All rights reserved. | Design by Abu Turab
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan My Trip - Discover Azerbaijan</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .sticky-nav {
+            transition: all 0.3s ease;
+        }
+        .nav-transparent {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .nav-solid {
+            background-color: #1E3A8A;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://azerbaijan.travel/fit2000x1000/center/pages/1732/9f34e9be-a70a-476a-9d79-46e123445158.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav id="navbar" class="sticky-nav nav-transparent text-white fixed w-full z-50" role="banner" aria-label="Main navigation">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="https://azerbaijan.travel/images/logo-short.svg" alt="Azerbaijan Tourism Logo" class="h-10 mr-3" loading="lazy">
+                <span class="text-xl font-bold">Discover Azerbaijan</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-yellow-300 transition duration-300">Home</a>
+                <a href="plan-my-trip.html" class="bg-yellow-500 text-blue-900 font-bold px-4 py-2 rounded-full hover:bg-yellow-600 transition duration-300">Plan My Trip</a>
+            </div>
+            
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-blue-900 w-full absolute top-20 left-0 right-0">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-white hover:text-yellow-300 transition duration-300">Home</a>
+                    <a href="plan-my-trip.html" class="bg-yellow-500 text-blue-900 font-bold px-4 py-2 rounded-full hover:bg-yellow-600 transition duration-300 inline-block">Plan My Trip</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-white text-center" role="main" aria-label="Plan your trip to Azerbaijan">
+        <div class="container mx-auto px-4 mt-16">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Plan Your Azerbaijan Adventure</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Customize your perfect itinerary with our trip planning tool</p>
+        </div>
+    </section>
+
+    <!-- Trip Planner Form -->
+    <section class="py-16 bg-white" role="region" aria-label="Trip planning form">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <div class="bg-blue-900 text-white p-6">
+                    <h2 class="text-2xl font-bold">Trip Details</h2>
+                    <p class="text-blue-200">Fill in your preferences to generate a personalized itinerary</p>
+                </div>
+                
+                <form class="p-6 md:p-8">
+                    <!-- Trip Duration -->
+                    <div class="mb-8">
+                        <label class="block text-gray-700 font-bold mb-4">1. Trip Duration</label>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <label class="flex items-center">
+                                <input type="radio" name="duration" class="form-radio text-blue-900" checked>
+                                <span class="ml-2">3-5 days</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="duration" class="form-radio text-blue-900">
+                                <span class="ml-2">1 week</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="duration" class="form-radio text-blue-900">
+                                <span class="ml-2">2 weeks</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="duration" class="form-radio text-blue-900">
+                                <span class="ml-2">3+ weeks</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Destinations -->
+                    <div class="mb-8">
+                        <label class="block text-gray-700 font-bold mb-4">2. Destinations (Select up to 5)</label>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-blue-900">
+                                <span class="ml-2">Baku</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-blue-900">
+                                <span class="ml-2">Gobustan</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-blue-900">
+                                <span class="ml-2">Sheki</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-blue-900">
+                                <span class="ml-2">Gabala</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-blue-900">
+                                <span class="ml-2">Lankaran</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-blue-900">
+                                <span class="ml-2">Shamakhi</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-blue-900">
+                                <span class="ml-2">Quba</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="form-checkbox text-blue-900">
+                                <span class="ml-2">Nakhchivan</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Travel Style -->
+                    <div class="mb-8">
+                        <label class="block text-gray-700 font-bold mb-4">3. Travel Style</label>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <label class="flex flex-col items-center p-4 border-2 border-gray-200 rounded-lg hover:border-blue-900 transition duration-300">
+                                <input type="radio" name="travel-style" class="form-radio text-blue-900" checked>
+                                <i class="fas fa-umbrella-beach text-3xl my-3 text-blue-900"></i>
+                                <span class="text-center">Relaxation</span>
+                            </label>
+                            <label class="flex flex-col items-center p-4 border-2 border-gray-200 rounded-lg hover:border-blue-900 transition duration-300">
+                                <input type="radio" name="travel-style" class="form-radio text-blue-900">
+                                <i class="fas fa-landmark text-3xl my-3 text-blue-900"></i>
+                                <span class="text-center">Culture</span>
+                            </label>
+                            <label class="flex flex-col items-center p-4 border-2 border-gray-200 rounded-lg hover:border-blue-900 transition duration-300">
+                                <input type="radio" name="travel-style" class="form-radio text-blue-900">
+                                <i class="fas fa-hiking text-3xl my-3 text-blue-900"></i>
+                                <span class="text-center">Adventure</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Budget -->
+                    <div class="mb-8">
+                        <label class="block text-gray-700 font-bold mb-4">4. Budget (per person)</label>
+                        <div class="mb-4">
+                            <input type="range" min="100" max="5000" value="1000" step="100" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                        </div>
+                        <div class="flex justify-between">
+                            <span>$100</span>
+                            <span>$5000+</span>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <span class="bg-blue-100 text-blue-900 font-bold px-4 py-2 rounded-full">$1000</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Accommodation -->
+                    <div class="mb-8">
+                        <label class="block text-gray-700 font-bold mb-4">5. Accommodation Preference</label>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <label class="flex flex-col items-center p-4 border-2 border-gray-200 rounded-lg hover:border-blue-900 transition duration-300">
+                                <input type="radio" name="accommodation" class="form-radio text-blue-900" checked>
+                                <i class="fas fa-hotel text-3xl my-3 text-blue-900"></i>
+                                <span class="text-center">Hotels</span>
+                            </label>
+                            <label class="flex flex-col items-center p-4 border-2 border-gray-200 rounded-lg hover:border-blue-900 transition duration-300">
+                                <input type="radio" name="accommodation" class="form-radio text-blue-900">
+                                <i class="fas fa-home text-3xl my-3 text-blue-900"></i>
+                                <span class="text-center">Guesthouses</span>
+                            </label>
+                            <label class="flex flex-col items-center p-4 border-2 border-gray-200 rounded-lg hover:border-blue-900 transition duration-300">
+                                <input type="radio" name="accommodation" class="form-radio text-blue-900">
+                                <i class="fas fa-campground text-3xl my-3 text-blue-900"></i>
+                                <span class="text-center">Eco Lodges</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <div class="text-center mt-8">
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">
+                            Generate My Itinerary
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="border-t border-gray-800 pt-4">
+                <p class="text-center text-gray-500">
+                    &copy; 2025 Discover Azerbaijan. All rights reserved. | Design by Abu Turab
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

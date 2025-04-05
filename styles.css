@@ -1,0 +1,209 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+}
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.hok.com/wp-content/uploads/2019/05/Baku-Flame-Towers-Skyline-03-1900-1600x1069.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+.nav-transparent {
+    background-color: transparent;
+}
+.nav-solid {
+    background-color: #0f2557;
+}
+.season-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.season-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.destination-card {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.destination-card:hover {
+    transform: scale(1.03);
+}
+.destination-card img {
+    transition: transform 0.5s ease;
+}
+.destination-card:hover img {
+    transform: scale(1.1);
+}
+/* Mobile menu */
+.mobile-menu {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+.mobile-menu.active {
+    transform: translateX(0);
+}
+.cuisine-item {
+    transition: transform 0.3s ease;
+}
+.cuisine-item:hover {
+    transform: translateY(-5px);
+}
+/* Visa Requirements Page Styles */
+.visa-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1566438480900-0609be27a4be');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 0;
+}
+
+.visa-card {
+    transition: all 0.3s ease;
+    border-left: 4px solid #0f2557;
+}
+
+.visa-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.visa-process-step {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.visa-process-step:before {
+    content: counter(step);
+    counter-increment: step;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #0f2557;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.visa-doc-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.visa-doc-item:before {
+    content: "•";
+    color: #0f2557;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5rem;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+/* Tourist Info Points Page Styles */
+.info-points-section {
+    padding: 4rem 0;
+}
+
+.info-points-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-point-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-point-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-point-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.info-point-content {
+    padding: 1.5rem;
+}
+
+.info-point-content h3 {
+    color: #0f2557;
+    margin-bottom: 1rem;
+}
+
+.info-point-details p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.info-point-details strong {
+    color: #0f2557;
+}
+
+/* Travel Insurance Page Styles */
+.insurance-cta-button {
+    background-color: white;
+    color: #0f2557;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.insurance-cta-button:hover {
+    background-color: #f0f4f8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #0f2557;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0a1c42;
+}

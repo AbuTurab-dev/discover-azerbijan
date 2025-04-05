@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Azerbaijan - Your Ultimate Travel Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav id="navbar" class="sticky-nav nav-transparent text-white" role="banner" aria-label="Main navigation">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="Index.html" class="flex items-center">
+                        <img src="https://azerbaijan.travel/images/logo-short.svg" alt="Azerbaijan Tourism Logo" class="h-10 mr-3" loading="lazy">
+                <span class="text-xl font-bold">Discover Azerbaijan</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#destinations" class="hover:text-yellow-300 transition duration-300">Destinations</a>
+                <a href="#seasons" class="hover:text-yellow-300 transition duration-300">Seasons</a>
+                <a href="#culture" class="hover:text-yellow-300 transition duration-300">Culture & Cuisine</a>
+                <a href="#transportation" class="hover:text-yellow-300 transition duration-300">Transportation</a>
+                <a href="#tips" class="hover:text-yellow-300 transition duration-300">Travel Tips</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu absolute top-0 left-0 h-screen w-64 bg-blue-900 text-white py-4 px-6 md:hidden">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-xl font-bold">Menu</span>
+                <button id="close-menu" class="focus:outline-none">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-6">
+                <a href="#destinations" class="hover:text-yellow-300 transition duration-300">Destinations</a>
+                <a href="#seasons" class="hover:text-yellow-300 transition duration-300">Seasons</a>
+                <a href="#culture" class="hover:text-yellow-300 transition duration-300">Culture & Cuisine</a>
+                <a href="#transportation" class="hover:text-yellow-300 transition duration-300">Transportation</a>
+                <a href="#tips" class="hover:text-yellow-300 transition duration-300">Travel Tips</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-white text-center" role="main" aria-label="Discover Azerbaijan">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Experience the Magic of Azerbaijan</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Where East meets West, and ancient history blends with modern luxury</p>
+            <a href="#destinations" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-16 bg-white ">
+        <div class="container mx-auto px-4 ">
+            <div class="flex flex-col md:flex-row  items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-900 text-center">Welcome to the Land of Fire</h2>
+                    <p class="text-lg mb-6 text-gray-700">
+                        Azerbaijan, often called the "Land of Fire," is a captivating country where East meets West, creating a unique blend of traditions, culture, and landscapes. Located at the crossroads of Europe and Asia, this hidden gem offers travelers an unforgettable experience filled with rich history, stunning architecture, delicious cuisine, and warm hospitality.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        From the modern skyline of Baku with its iconic Flame Towers to the ancient rock art of Gobustan, Azerbaijan is a land of contrasts that will enchant every visitor. Whether you're seeking adventure in the Caucasus Mountains, relaxation on the shores of the Caspian Sea, or cultural immersion in historic villages, Azerbaijan has something for everyone.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="relative  ">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wcd4nqtV-UM?si=cNIs_vs58B0kvBGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Destinations Section -->
+    <section id="destinations" class="py-16 bg-gray-100" role="region" aria-label="Popular destinations in Azerbaijan">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3 text-center text-blue-900">Top Destinations</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">Explore the most breathtaking and culturally rich destinations Azerbaijan has to offer</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Destination 1: Baku -->
+                <div class="destination-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://www.hok.com/wp-content/uploads/2019/05/Baku-Flame-Towers-Skyline-01-1270.jpg" alt="Baku Flame Towers" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-900"><a href="baku.html">Baku</a></h3>
+                        <p class="text-gray-700 mb-4">The capital city blends ancient history with futuristic architecture. Visit the UNESCO-listed Old City (Icherisheher), admire the iconic Flame Towers, and stroll along the beautiful Baku Boulevard along the Caspian Sea.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
+                            <span>Capital City</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 2: Old City (Icherisheher) -->
+                <div class="destination-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://wander-lush.org/wp-content/uploads/2019/05/Georgia-Azerbaijan-itinerary-Baku-Old-City-Hero.jpg" alt="Old City Baku" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-900"><a href="old-city.html">Old City (Icherisheher)</a></h3>
+                        <p class="text-gray-700 mb-4">This UNESCO World Heritage site dates back to the 12th century. Explore the narrow streets, visit the Maiden Tower, Palace of the Shirvanshahs, and discover ancient mosques and bathhouses.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
+                            <span>Baku</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 3: Gobustan -->
+                <div class="destination-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://whc.unesco.org/uploads/thumbs/site_1076_0017-750-750-20131001175023.jpg" alt="Gobustan Rock Art" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-900"> <a href="gobustan-national-park.html">Gobustan National Park</a> </h3>
+                        <p class="text-gray-700 mb-4">Home to over 6,000 prehistoric rock carvings dating back 40,000 years. This UNESCO World Heritage site also features mud volcanoes and incredible natural landscapes.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
+                            <span>60km from Baku</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 4: Sheki -->
+                <div class="destination-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://i.natgeofe.com/n/2e9dd0c6-a621-45a2-bb00-adea3ccfd859/traditional-food-in-azerbaijan-3.jpg" alt="Traditional Azerbaijani cuisine in Sheki including dolma and kebabs" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-900"><a href="sheki.html">Sheki</a></h3>
+                        <p class="text-gray-700 mb-4">A historic city on the Silk Road known for its Palace of Sheki Khans with intricate stained glass work. Famous for its sweets, crafts, and beautiful mountain setting.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
+                            <span>Northwestern Azerbaijan</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 5: Gabala -->
+                <div class="destination-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://azerbaijan.travel/fit746x426/center/pages/1732/9f34e9be-a70a-476a-9d79-46e123445158.jpg" alt="Gabala" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-900"><a href="gabala.html">Gabala</a></h3>
+                        <p class="text-gray-700 mb-4">A popular mountain resort destination with skiing in winter and lush forests in summer. Visit Tufandag Mountain Resort, Nohur Lake, and enjoy the scenic Seven Beauties Waterfall.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
+                            <span>Northern Azerbaijan</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 6: Lankaran -->
+                <div class="destination-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://azerbaijan.travel/fit746x426/center/pages/1732/e1d4bd18-52b1-4eb7-b32f-54ee8b46e3f7.jpg" alt="Lankaran region with tea plantations and subtropical vegetation" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-900"><a href="lankaran.html">Lankaran</a></h3>
+                        <p class="text-gray-700 mb-4">A subtropical region known for its tea plantations, citrus orchards, and the amazing Hirkan National Park - home to the endangered Caucasian leopard and ancient boxwood trees.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
+                            <span>Southern Azerbaijan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#" class="bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">View All Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasons Section -->
+    <section id="seasons" class="py-16 bg-white" role="region" aria-label="Best seasons to visit Azerbaijan">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3 text-center text-blue-900">Azerbaijan Through the Seasons</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">Azerbaijan is a year-round destination with each season offering unique experiences and breathtaking landscapes</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Winter -->
+                <div class="season-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://azerbaijan.travel/fit746x426/center/pages/1732/2efdf441-d878-40dc-a5b5-dc91296a2387.jpg" alt="Winter landscape in Azerbaijan with snow-covered mountains" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-snowflake text-2xl text-blue-500 mr-3"></i>
+                            <h3 class="text-2xl font-bold text-blue-900">Winter</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Perfect for skiing at Shahdag and Tufandag resorts from December to March. Experience festive celebrations in Baku with Christmas markets and New Year events at Fountains Square.
+                        </p>
+                        <p class="text-gray-700 font-semibold">
+                            Best for: Skiing, winter sports, and festive celebrations
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Spring -->
+                <div class="season-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://azerbaijan.travel/fit746x426/center/pages/1732/d70e327a-9065-4dd1-bde3-4353f6933063.jpg" alt="Spring flowers blooming in Azerbaijan countryside" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-leaf text-2xl text-green-500 mr-3"></i>
+                            <h3 class="text-2xl font-bold text-blue-900">Spring</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Celebrate Novruz, the traditional new year festival in March. Enjoy blooming landscapes at Goygol and Maralgol lakes near Ganja. May is ideal for exploring historical sites in Sheki and Gabala.
+                        </p>
+                        <p class="text-gray-700 font-semibold">
+                            Best for: Cultural festivals, nature exploration, and mild weather
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Summer -->
+                <div class="season-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://azerbaijan.travel/fit746x426/center/pages/1732/9f34e9be-a70a-476a-9d79-46e123445158.jpg" alt="Summer view of Gabala mountain resort in Azerbaijan" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-sun text-2xl text-yellow-500 mr-3"></i>
+                            <h3 class="text-2xl font-bold text-blue-900">Summer</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Enjoy the beaches along the Absheron Peninsula and Caspian Sea from June to August. Experience major events like the Azerbaijan Grand Prix and Summer International Music Festival.
+                        </p>
+                        <p class="text-gray-700 font-semibold">
+                            Best for: Beach vacations, major events, and countryside exploration
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Autumn -->
+                <div class="season-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://azerbaijan.travel/fit746x426/center/pages/1732/e1d4bd18-52b1-4eb7-b32f-54ee8b46e3f7.jpg" alt="Autumn colors in Lankaran's tea plantations" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-tree text-2xl text-orange-500 mr-3"></i>
+                            <h3 class="text-2xl font-bold text-blue-900">Autumn</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            Experience the grape harvest in wine regions like Gabala, Ismayilli, and Shamakhi. Enjoy milder temperatures perfect for hiking in national parks with spectacular fall foliage.
+                        </p>
+                        <p class="text-gray-700 font-semibold">
+                            Best for: Wine tours, fall foliage, and mountain hiking
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-50 p-8 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4 text-blue-900">Weather Guide</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white">
+                        <thead>
+                            <tr>
+                                <th class="py-3 px-4 border-b-2 border-gray-200 bg-gray-100 text-left text-sm font-semibold text-gray-600">Month</th>
+                                <th class="py-3 px-4 border-b-2 border-gray-200 bg-gray-100 text-left text-sm font-semibold text-gray-600">Baku (°C)</th>
+                                <th class="py-3 px-4 border-b-2 border-gray-200 bg-gray-100 text-left text-sm font-semibold text-gray-600">Mountains (°C)</th>
+                                <th class="py-3 px-4 border-b-2 border-gray-200 bg-gray-100 text-left text-sm font-semibold text-gray-600">Precipitation</th>
+                                <th class="py-3 px-4 border-b-2 border-gray-200 bg-gray-100 text-left text-sm font-semibold text-gray-600">Recommendation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200">Jan-Feb</td>
+                                <td class="py-3 px-4 border-b border-gray-200">3 to 7</td>
+                                <td class="py-3 px-4 border-b border-gray-200">-5 to 0</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Moderate</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Skiing in mountain resorts</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200">Mar-May</td>
+                                <td class="py-3 px-4 border-b border-gray-200">10 to 20</td>
+                                <td class="py-3 px-4 border-b border-gray-200">5 to 15</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Low to moderate</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Ideal for city tours and nature trips</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200">Jun-Aug</td>
+                                <td class="py-3 px-4 border-b border-gray-200">25 to 32</td>
+                                <td class="py-3 px-4 border-b border-gray-200">18 to 25</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Low</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Beach vacations, mountains for cooler climate</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200">Sep-Nov</td>
+                                <td class="py-3 px-4 border-b border-gray-200">15 to 25</td>
+                                <td class="py-3 px-4 border-b border-gray-200">8 to 18</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Low to moderate</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Wine regions, cultural tours, hiking</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-gray-200">Dec</td>
+                                <td class="py-3 px-4 border-b border-gray-200">5 to 10</td>
+                                <td class="py-3 px-4 border-b border-gray-200">-3 to 2</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Moderate</td>
+                                <td class="py-3 px-4 border-b border-gray-200">Festive celebrations, early ski season</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture and Cuisine Section -->
+    <section id="culture" class="py-16 bg-gray-100" role="region" aria-label="Azerbaijani culture and cuisine">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3 text-center text-blue-900">Culture & Cuisine</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">Discover Azerbaijan's rich cultural heritage and delicious traditional cuisine</p>
+            
+            <div class="flex flex-col lg:flex-row gap-8 mb-16">
+                <div class="lg:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://i.natgeofe.com/n/add4a80b-4c79-4b27-8916-91ff6a929812/azpcazerbaijanplov-12hr.jpeg" alt="Traditional Azerbaijani plov with saffron rice and meat" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4 text-blue-900">Traditional Azerbaijani Cuisine</h3>
+                        <p class="text-gray-700 mb-6">
+                            Azerbaijani cuisine is a delicious blend of influences from the Middle East, Mediterranean, and Central Asia. The food culture places great emphasis on hospitality, with meals meant to be shared and enjoyed together.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="cuisine-item">
+                                <h4 class="font-bold text-lg mb-2 text-blue-800">Plov (Pilaf)</h4>
+                                <p class="text-gray-700">The king of Azerbaijani cuisine - saffron-infused rice with various meats, dried fruits, and herbs.</p>
+                            </div>
+                            <div class="cuisine-item">
+                                <h4 class="font-bold text-lg mb-2 text-blue-800">Kebabs</h4>
+                                <p class="text-gray-700">Various skewered and grilled meats like lula (ground meat), tika (chunked meat), and basdirma (marinated meat).</p>
+                            </div>
+                            <div class="cuisine-item">
+                                <h4 class="font-bold text-lg mb-2 text-blue-800">Dolma</h4>
+                                <p class="text-gray-700">Stuffed grape leaves or vegetables filled with minced meat, rice, and herbs.</p>
+                            </div>
+                            <div class="cuisine-item">
+                                <h4 class="font-bold text-lg mb-2 text-blue-800">Qutab</h4>
+                                <p class="text-gray-700">Thin, crescent-shaped savory pancakes filled with meat, cheese, or greens.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://unesco.ru/wp-content/uploads/2023/08/53-5-1.jpg" alt="Azerbaijani mugham musicians performing traditional music" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4 text-blue-900">Cultural Heritage</h3>
+                        <p class="text-gray-700 mb-6">
+                            Azerbaijan's culture is a fascinating blend of influences shaped by its position at the crossroads of East and West. The country's heritage encompasses centuries of artistic traditions, music, dance, and craftsmanship.
+                        </p>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="font-bold text-lg mb-2 text-blue-800">Mugham Music</h4>
+                                <p class="text-gray-700">UNESCO-recognized traditional musical form with complex vocal improvisations.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2 text-blue-800">Carpet Weaving</h4>
+                                <p class="text-gray-700">An ancient tradition with distinct regional patterns. Visit the Azerbaijan Carpet Museum in Baku.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2 text-blue-800">Novruz Celebrations</h4>
+                                <p class="text-gray-700">Spring festival marking the new year with traditional foods, games, and customs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cultural Experiences -->
+            <h3 class="text-2xl font-bold mb-6 text-blue-900">Cultural Experiences</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-music text-2xl text-blue-900 mr-3"></i>
+                        <h4 class="text-xl font-bold text-blue-900">Traditional Music Performance</h4>
+                    </div>
+                    <p class="text-gray-700">
+                        Experience a live Mugham performance at the International Mugham Center in Baku, or catch a folk music concert featuring the tar, kamancha, and other traditional instruments.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-hands text-2xl text-blue-900 mr-3"></i>
+                        <h4 class="text-xl font-bold text-blue-900">Carpet Weaving Workshop</h4>
+                    </div>
+                    <p class="text-gray-700">
+                        Participate in a traditional carpet weaving workshop in Quba or Sheki regions, where you can learn about this ancient craft and create your own small piece to take home.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-utensils text-2xl text-blue-900 mr-3"></i>
+                        <h4 class="text-xl font-bold text-blue-900">Cooking Class</h4>
+                    </div>
+                    <p class="text-gray-700">
+                        Join a cooking class in Baku to learn how to prepare traditional Azerbaijani dishes like plov, dolma, or pakhlava under the guidance of a local chef.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transportation Section -->
+    <section id="transportation" class="py-16 bg-white" role="region" aria-label="Transportation options in Azerbaijan">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3 text-center text-blue-900">Getting Around Azerbaijan</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">Transportation options to help you navigate through Azerbaijan with ease</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Public Transportation -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 p-3 mr-4">
+                            <i class="fas fa-subway text-2xl text-blue-900"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Public Transportation</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Baku Metro:</strong> Clean, affordable subway system covering major parts of the capital city.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>City Buses:</strong> Extensive network in Baku and other major cities. Use BakiKart for payment.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Intercity Buses:</strong> Comfortable coaches connecting major cities and towns.</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-gray-700">
+                        The most economical way to travel, especially in Baku where the metro system is efficient and well-maintained.
+                    </p>
+                </div>
+                
+                <!-- Taxis and Ride-sharing -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 p-3 mr-4">
+                            <i class="fas fa-taxi text-2xl text-blue-900"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Taxis & Ride-sharing</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>London Cabs:</strong> Official purple taxis in Baku with meters.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Bolt and Uber:</strong> Popular ride-sharing apps operating in Baku.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Traditional Taxis:</strong> Available throughout the country, negotiate fare before riding.</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-gray-700">
+                        Convenient and relatively affordable, especially when using ride-sharing apps which eliminate language barriers.
+                    </p>
+                </div>
+                
+                <!-- Railways -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 p-3 mr-4">
+                            <i class="fas fa-train text-2xl text-blue-900"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Railways</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Modern Trains:</strong> Connect Baku to Ganja, Gabala, Sheki, and other cities.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Scenic Routes:</strong> Especially beautiful when traveling to the northwestern regions.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Comfort Classes:</strong> Options ranging from standard to business class.</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-gray-700">
+                        A comfortable and scenic way to travel between major cities, with modern trains on many routes.
+                    </p>
+                </div>
+                
+                <!-- Car Rental -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 p-3 mr-4">
+                            <i class="fas fa-car text-2xl text-blue-900"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Car Rental</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>International Companies:</strong> Avis, Hertz, and Sixt operate in Baku.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Local Rentals:</strong> Often more affordable than international companies.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Requirements:</strong> International Driving Permit recommended.</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-gray-700">
+                        Ideal for exploring remote areas and setting your own schedule, though navigating Baku traffic can be challenging.
+                    </p>
+                </div>
+                
+                <!-- Domestic Flights -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 p-3 mr-4">
+                            <i class="fas fa-plane text-2xl text-blue-900"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Domestic Flights</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Azerbaijan Airlines (AZAL):</strong> Operates domestic flights to Ganja, Nakhchivan, and Lankaran.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Time-saving:</strong> Particularly useful for reaching Nakhchivan, which is separated from main Azerbaijan territory.</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-gray-700">
+                        Limited routes but can save significant time when traveling to distant regions of the country.
+                    </p>
+                </div>
+                
+                <!-- Tour Operators -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 p-3 mr-4">
+                            <i class="fas fa-bus-alt text-2xl text-blue-900"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Tour Operators</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Day Tours:</strong> Convenient options from Baku to popular destinations like Gobustan or Quba.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Multi-day Tours:</strong> Comprehensive packages covering multiple regions.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span><strong>Private Guides:</strong> Available for hire with vehicles for customized experiences.</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-gray-700">
+                        The most hassle-free option, particularly for those with limited time or who prefer having a knowledgeable guide.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-50 p-8 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4 text-blue-900">Transportation Tips</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-info-circle text-blue-700 text-xl mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">BakiKart</h4>
+                            <p class="text-gray-700">Purchase a BakiKart for use on Baku's public transportation system. Available at metro stations and some convenience stores.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-info-circle text-blue-700 text-xl mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Road Conditions</h4>
+                            <p class="text-gray-700">Main highways are well-maintained, but rural roads may be in varying conditions. Consider a 4WD vehicle for remote mountain areas.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-info-circle text-blue-700 text-xl mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Train Tickets</h4>
+                            <p class="text-gray-700">Book train tickets in advance, especially during summer and holiday periods. Available online at ady.az or at train stations.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-info-circle text-blue-700 text-xl mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Taxis</h4>
+                            <p class="text-gray-700">Always negotiate the fare before getting in unofficial taxis. Using ride-sharing apps is recommended to avoid overcharging.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips Section -->
+    <section id="tips" class="py-16 bg-gray-100" role="region" aria-label="Essential travel tips for Azerbaijan">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3 text-center text-blue-900">Essential Travel Tips</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">Make the most of your trip to Azerbaijan with these practical travel tips</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Visa & Entry -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 p-3 mr-4">
+                            <i class="fas fa-passport text-2xl text-blue-900"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Visa & Entry</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Most visitors need an e-visa, obtainable through evisa.gov.az</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Standard e-visa processing takes 3 business days</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Passport must be valid for at least 6 months beyond your planned departure</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Money & Costs -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 p-3 mr-4">
+                            <i class="fas fa-money-bill-wave text-2xl text-blue-900"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Money & Costs</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Currency: Azerbaijani Manat (AZN)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>ATMs widely available in cities; credit cards accepted in most urban establishments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Carry cash for rural areas and small businesses</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Language -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 p-3 mr-4">
+                            <i class="fas fa-comments text-2xl text-blue-900"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Language</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Official language: Azerbaijani</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Russian is widely spoken as a second language</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>English proficiency increasing, especially in tourism sector and among younger generations</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Safety -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 p-3 mr-4">
+                            <i class="fas fa-shield-alt text-2xl text-blue-900"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Safety</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Azerbaijan is generally very safe for tourists</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Low crime rate, especially violent crime</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Use standard precautions in crowded areas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Avoid border regions with Armenia</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Internet & Connectivity -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 p-3 mr-4">
+                            <i class="fas fa-wifi text-2xl text-blue-900"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Internet & Connectivity</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Good 4G coverage in urban areas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Free Wi-Fi in most hotels, cafes, and restaurants</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Local SIM cards available at airport and mobile shops (passport required)</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Etiquette & Culture -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="rounded-full bg-blue-100 p-3 mr-4">
+                            <i class="fas fa-handshake text-2xl text-blue-900"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Etiquette & Culture</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Azerbaijanis are known for hospitality and friendliness</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Modest dress recommended when visiting mosques or rural areas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Remove shoes when entering homes if hosts do so</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>It's polite to try offered food and drink</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-800 text-white p-8 rounded-lg">
+                <h3 class="text-2xl font-bold mb-6">When to Visit</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">Best Time to Visit</h4>
+                        <p class="mb-4">
+                            April to June and September to October offer the most pleasant temperatures and ideal conditions for exploring both cities and nature.
+                        </p>
+                        <p>
+                            Summer (June-August) is perfect for beach vacations on the Caspian Sea, while winter (December-February) is ideal for skiing in the mountain resorts.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">Key Festivals & Events</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-calendar-day mr-2 mt-1"></i>
+                                <span><strong>Novruz</strong> (March) - Traditional New Year celebration with special foods and customs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-calendar-day mr-2 mt-1"></i>
+                                <span><strong>Baku Jazz Festival</strong> (October) - International jazz performances</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-calendar-day mr-2 mt-1"></i>
+                                <span><strong>Azerbaijan Grand Prix</strong> (April/May) - Formula 1 racing in Baku</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-calendar-day mr-2 mt-1"></i>
+                                <span><strong>Pomegranate Festival</strong> (October) - Celebration of Azerbaijan's beloved fruit in Goychay</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-blue-900 text-white text-center" role="region" aria-label="Plan your trip to Azerbaijan">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Experience Azerbaijan?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Start planning your unforgettable journey to the Land of Fire today!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="plan-my-trip.html" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Plan My Trip</a>
+                <a href="#" class="bg-transparent hover:bg-white hover:text-blue-900 font-bold py-3 px-8 border-2 border-white rounded-full text-lg transition duration-300 inline-block">Contact a Travel Expert</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12" role="contentinfo" aria-label="Website footer">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Discover Azerbaijan</h3>
+                    <p class="text-gray-400 mb-4">
+                        Your ultimate guide to exploring the Land of Fire. We help travelers discover the beauty, culture, and hospitality of Azerbaijan.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#destinations" class="text-gray-400 hover:text-white transition duration-300">Top Destinations</a></li>
+                        <li><a href="#seasons" class="text-gray-400 hover:text-white transition duration-300">Travel Seasons</a></li>
+                        <li><a href="#culture" class="text-gray-400 hover:text-white transition duration-300">Culture & Cuisine</a></li>
+                        <li><a href="#transportation" class="text-gray-400 hover:text-white transition duration-300">Transportation</a></li>
+                        <li><a href="#tips" class="text-gray-400 hover:text-white transition duration-300">Travel Tips</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Useful Information</h3>
+                    <ul class="space-y-2">
+                        <li><a href="visa-requirements.html" class="text-gray-400 hover:text-white transition duration-300">Visa Requirements</a></li>
+                        <li><a href="practical-information.html" class="text-gray-400 hover:text-white transition duration-300">practical
+                            information</a></li>
+                        <li><a href="tourist-info-points.html" class="text-gray-400 hover:text-white transition duration-300">Tourist Info Points</a></li>
+                        <li><a href="travel-insurance.html" class="text-gray-400 hover:text-white transition duration-300">Travel Insurance</a></li>
+                        <li><a href="useful-vocabulary.html" class="text-gray-400 hover:text-white transition duration-300">useful
+                            vocabulary</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>123 Tourism Street, Baku, Azerbaijan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-2"></i>
+                            <span>+994 XX XXX XX XX</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2"></i>
+                            <span>info@discoverazerbaijan.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-center text-gray-500">
+                    &copy; 2025 Discover Azerbaijan. All rights reserved. | Design by Abu Turab
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheki | Discover Azerbaijan</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav id="navbar" class="sticky-nav nav-transparent text-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="https://azerbaijan.travel/images/logo-short.svg" alt="Azerbaijan Logo" class="h-10 mr-3">
+                <span class="text-xl font-bold">Discover Azerbaijan</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html#destinations" class="hover:text-yellow-300 transition duration-300">Destinations</a>
+                <a href="index.html#seasons" class="hover:text-yellow-300 transition duration-300">Seasons</a>
+                <a href="index.html#culture" class="hover:text-yellow-300 transition duration-300">Culture & Cuisine</a>
+                <a href="index.html#transportation" class="hover:text-yellow-300 transition duration-300">Transportation</a>
+                <a href="index.html#tips" class="hover:text-yellow-300 transition duration-300">Travel Tips</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu absolute top-0 left-0 h-screen w-64 bg-blue-900 text-white py-4 px-6 md:hidden">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-xl font-bold">Menu</span>
+                <button id="close-menu" class="focus:outline-none">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-6">
+                <a href="index.html#destinations" class="hover:text-yellow-300 transition duration-300">Destinations</a>
+                <a href="index.html#seasons" class="hover:text-yellow-300 transition duration-300">Seasons</a>
+                <a href="index.html#culture" class="hover:text-yellow-300 transition duration-300">Culture & Cuisine</a>
+                <a href="index.html#transportation" class="hover:text-yellow-300 transition duration-300">Transportation</a>
+                <a href="index.html#tips" class="hover:text-yellow-300 transition duration-300">Travel Tips</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-white text-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://azerbaijan.travel/fit746x426/center/pages/1732/9f34e9be-a70a-476a-9d79-46e123445158.jpg');">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Sheki</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">A historic Silk Road city known for its stunning architecture and sweet delicacies</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-900">Discover Sheki's Rich Heritage</h2>
+                    <p class="text-lg mb-6 text-gray-700">
+                        Nestled in the foothills of the Greater Caucasus Mountains, Sheki is one of Azerbaijan's most picturesque cities with a history dating back over 2,500 years. As an important stop on the ancient Silk Road, Sheki developed into a center of crafts, trade, and culture.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        Today, visitors are enchanted by Sheki's well-preserved historic center, traditional architecture, and famous sweet shops. The city's cool mountain climate makes it a perfect summer retreat from Baku's heat.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://azerbaijan.travel/fit746x426/center/pages/1732/9f34e9be-a70a-476a-9d79-46e123445158.jpg" alt="Sheki landscape" class="w-full rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Attractions Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3 text-center text-blue-900">Key Attractions</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">Must-see sights in and around Sheki</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Palace of Sheki Khans -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://whc.unesco.org/uploads/thumbs/site_1549_0001-750-750-20151104151824.jpg" alt="Palace of Sheki Khans" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-900">Palace of Sheki Khans</h3>
+                        <p class="text-gray-700 mb-4">
+                            This 18th-century summer palace is a masterpiece of Azerbaijani architecture, featuring stunning stained glass shebeke windows and intricate frescoes. A UNESCO World Heritage site.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
+                            <span>Central Sheki</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sheki Fortress -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://mediaim.expedia.com/destination/1/0a0a1a1a1a1a1a1a1a1a1a1a1a1a1a1a.jpg" alt="Sheki Fortress" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-900">Sheki Fortress</h3>
+                        <p class="text-gray-700 mb-4">
+                            The 18th-century fortress walls enclose the historic center of Sheki, including the Khan's Palace. Walk along the walls for panoramic views of the city.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
+                            <span>Historic Center</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Caravanserai -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://mediaim.expedia.com/destination/1/0a0a1a1a1a1a1a1a1a1a1a1a1a1a1a1a.jpg" alt="Caravanserai" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-900">Sheki Caravanserai</h3>
+                        <p class="text-gray-700 mb-4">
+                            This beautifully restored 18th-century inn once hosted Silk Road merchants. Today it operates as a hotel, allowing visitors to experience historic accommodations.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-red-500"></i>
+                            <span>Central Sheki</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3 text-center text-blue-900">Travel Tips</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-900">Getting There</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-bus text-blue-900 mt-1 mr-3"></i>
+                            <span><strong>By Bus:</strong> Regular buses from Baku (5-6 hours) and other major cities</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-train text-blue-900 mt-1 mr-3"></i>
+                            <span><strong>By Train:</strong> Overnight train from Baku (8 hours) with comfortable sleeping cars</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-car text-blue-900 mt-1 mr-3"></i>
+                            <span><strong>By Car:</strong> 4-5 hour drive from Baku via scenic mountain roads</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-900">Local Specialties</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-utensils text-blue-900 mt-1 mr-3"></i>
+                            <span><strong>Sheki Halva:</strong> Famous layered pastry with nuts and spices</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-glass-whiskey text-blue-900 mt-1 mr-3"></i>
+                            <span><strong>Piti:</strong> Traditional lamb and chickpea stew cooked in clay pots</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-wine-glass-alt text-blue-900 mt-1 mr-3"></i>
+                            <span><strong>Sheki Wines:</strong> Try local varieties from surrounding vineyards</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3 text-center text-blue-900">Sheki Gallery</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="gallery-item overflow-hidden rounded-lg">
+                    <img src="https://azerbaijan.travel/fit746x426/center/pages/1732/9f34e9be-a70a-476a-9d79-46e123445158.jpg" alt="Sheki landscape" class="w-full h-48 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg">
+                    <img src="https://whc.unesco.org/uploads/thumbs/site_1549_0001-750-750-20151104151824.jpg" alt="Palace interior" class="w-full h-48 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg">
+                    <img src="https://mediaim.expedia.com/destination/1/0a0a1a1a1a1a1a1a1a1a1a1a1a1a1a1a.jpg" alt="Shebeke windows" class="w-full h-48 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg">
+                    <img src="https://i.natgeofe.com/n/2e9dd0c6-a621-45a2-bb00-adea3ccfd859/traditional-food-in-azerbaijan-3.jpg" alt="Sheki halva" class="w-full h-48 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg">
+                    <img src="https://azerbaijan.travel/fit746x426/center/pages/1732/9f34e9be-a70a-476a-9d79-46e123445158.jpg" alt="Mountain village" class="w-full h-48 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-lg">
+                    <img src="https://mediaim.expedia.com/destination/1/0a0a1a1a1a1a1a1a1a1a1a1a1a1a1a1a.jpg" alt="Traditional crafts" class="w-full h-48 object-cover hover:scale-105 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="border-t border-gray-800 pt-4">
+                <p class="text-center text-gray-500">
+                    &copy; 2025 Discover Azerbaijan. All rights reserved. | Design by Abu Turab
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
